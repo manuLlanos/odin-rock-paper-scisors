@@ -2,6 +2,9 @@
 
 const choices = ["rock", "paper", "scissors"];
 
+let humanScore = 0;
+let computerScore = 0;
+
 
 // returns an integer between 0 and n-1
 function getRandomInteger(n) {
