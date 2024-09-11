@@ -18,9 +18,9 @@ function getComputerChoice() {
 
 // prompts the user and returns the choice if valid
 function getHumanChoice() {
-    let choice = prompt("rock, paper or scissors?");
+    let choice = prompt("rock, paper or scissors?").toLocaleLowerCase();
     while (!choices.includes(choice)) {
-        choice = prompt("Wrong input.\nrock, paper or scissors?");
+        choice = prompt("Wrong input.\nrock, paper or scissors?").toLocaleLowerCase();
     }
 
     return choice;
