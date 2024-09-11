@@ -25,3 +25,43 @@ function getHumanChoice() {
 
     return choice;
 }
+
+
+// takes the computer and player choices as inputs
+// determines the winner and increases score
+function playRound(humanChoice, computerChoice) {
+    // handle simplest case: a draw
+    if(humanChoice === computerChoice) {
+        console.log(`It's a draw, ${humanChoice} cannot beat another ${humanChoice}.`);
+        return;
+    }
+    switch (computerChoice) {
+        case "rock":
+            if(humanChoice === "paper") {
+                console.log(`You win! Paper beats Rock`);
+                humanScore++;
+                return;
+            }
+            console.log(`You lose! Rock beats Scissors`);
+            computerScore++;
+            return;
+        case "paper":
+            if(humanChoice === "scissors") {
+                console.log(`You win! Scissors beats paper`);
+                humanScore++;
+                return;
+            }
+            console.log(`You lose! Paper beats Rock`);
+            computerScore++;
+            return;
+        case "scissors":
+            if(humanChoice === "rock") {
+                console.log(`You win! Rock beats scissors`);
+                humanScore++;
+                return;
+            }
+            console.log(`You lose! Scissors beats Paper`);
+            computerScore++;
+            return;
+    }
+}
