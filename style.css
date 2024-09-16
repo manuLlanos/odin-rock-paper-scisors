@@ -1,4 +1,9 @@
 /* only to not go blind */
 body {
     background-color: black;
+    color: white;
+}
+
+#results {
+    white-space: pre-line;
 }
