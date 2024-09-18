@@ -7,3 +7,23 @@ body {
 #results {
     white-space: pre-line;
 }
+
+#container {
+    width: 480px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+#score {
+    text-align: center;
+    font-size: 24px;
+}
